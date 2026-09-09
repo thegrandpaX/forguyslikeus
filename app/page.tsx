@@ -1,48 +1,89 @@
 export default function Home() {
   return (
-    <div className="article-wrap">
-      <div className="article-hero">
-        <h1>For Guys Like Us</h1>
-        <p className="article-dek">
-          Straight talk about mental health for men who work hard and keep their heads down.
-        </p>
-        <div className="crisis-box">
-          <p>
-            <strong>In crisis?</strong> Call or text{" "}
-            <a href="tel:988">988</a> — free, confidential, 24/7.
-          </p>
-        </div>
-      </div>
-
-      <div className="intro-section">
-        <h2>Start Here</h2>
+    <div className="bento bento--home">
+      <div className="panel" style={{ gridColumn: "1 / 3", gridRow: "1 / 3" }}>
+        <span className="kicker">Hero</span>
+        <h1>Mental health help that talks like you do.</h1>
         <p>
-          Most men don't talk about mental health. We don't use clinical terms. We just say we're tired, stressed, or dealing with a bad week. But when that "bad week" turns into months of tension, short tempers, and needing something to take the edge off, it's worth taking an honest look.
+          Straight talk on depression, anxiety, ADHD, and burnout — from a
+          counselor who&apos;s been there.
         </p>
-        <p>
-          This site breaks down what depression, anxiety, PTSD, ADHD, and burnout actually look like in real life — no fluff, no soft language. Just facts.
-        </p>
-        <a href="/blog/real-talk" className="cta-button">
-          Read Real Talk →
+        <a className="btn btn-primary" href="/resources">
+          Start here
         </a>
       </div>
 
-      <div className="nav-section">
-        <h2>The Five Pillars</h2>
-        <div className="pillar-grid">
-          <a href="/topics" className="panel panel--link">
-            <h3>Explore Topics</h3>
-            <p>The Reality, The Barriers, The Paths, The Stories, The Resources</p>
+      <div
+        className="panel panel--accent"
+        style={{ gridColumn: "3 / 4", gridRow: "1 / 4" }}
+      >
+        <span className="kicker">In crisis now?</span>
+        <p>988 Suicide &amp; Crisis Lifeline — call or text, 24/7.</p>
+        <a className="tel-988" href="tel:988">
+          988
+        </a>
+      </div>
+
+      <a
+        className="panel panel--link"
+        style={{ gridColumn: "1 / 2", gridRow: "3 / 4" }}
+        href="/blog/real-talk"
+      >
+        <span className="kicker">Pillar 01</span>
+        <h3>The Reality</h3>
+      </a>
+
+      <a
+        className="panel panel--link"
+        style={{ gridColumn: "2 / 3", gridRow: "3 / 4" }}
+        href="/topics/barriers"
+      >
+        <span className="kicker">Pillar 02</span>
+        <h3>The Barriers</h3>
+      </a>
+
+      <div
+        className="panel panel--row"
+        style={{ gridColumn: "1 / 4", gridRow: "4 / 5" }}
+      >
+        <span className="kicker" style={{ margin: 0 }}>
+          Social
+        </span>
+        <div className="social-row">
+          <a className="tag" href="#" target="_blank" rel="noopener">
+            Instagram
           </a>
-          <a href="/blog" className="panel panel--link">
-            <h3>Read the Guides</h3>
-            <p>Depression, anxiety, PTSD, ADHD, substance use & burnout</p>
+          <a className="tag" href="#" target="_blank" rel="noopener">
+            Facebook
           </a>
-          <a href="/resources" className="panel panel--link">
-            <h3>Find Resources</h3>
-            <p>Crisis lines, screenings, and confidential options</p>
+          <a className="tag" href="#" target="_blank" rel="noopener">
+            X
+          </a>
+          <a className="tag" href="#" target="_blank" rel="noopener">
+            YouTube
           </a>
         </div>
+        <form
+          className="newsletter"
+          action="mailto:hello@forguyslikeus.org"
+          method="post"
+          encType="text/plain"
+        >
+          <label className="kicker" style={{ margin: 0 }} htmlFor="nl-home">
+            Newsletter
+          </label>
+          <input
+            className="input"
+            id="nl-home"
+            name="email"
+            type="email"
+            placeholder="you@email.com"
+            required
+          />
+          <button className="btn btn-primary" type="submit">
+            Join
+          </button>
+        </form>
       </div>
     </div>
   );
