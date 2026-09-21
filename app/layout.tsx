@@ -21,11 +21,10 @@ export default function RootLayout({
             </a>
             <div className="nav-links">
               <a href="/">Home</a>
-              <a href="/our-story">Our Story</a>
-              <a href="/topics">Topics</a>
-              <a href="/blog">Blog</a>
-              <a href="/resources">Resources</a>
-              <a href="/contact">Contact</a>
+              <a href="/topics">The Reality</a>
+              <a href="/topics/barriers">The Barriers</a>
+              <a href="/topics/paths">The Paths</a>
+              <a href="/resources">The Resources</a>
             </div>
           </nav>
         </header>
