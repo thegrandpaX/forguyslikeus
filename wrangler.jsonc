@@ -11,6 +11,16 @@
 		"directory": ".open-next/assets",
 		"binding": "ASSETS"
 	},
+	"kv_namespaces": [
+		{
+			// Stores "recommend a resource" form submissions, pending manual review.
+			// Create with: npx wrangler kv namespace create RESOURCE_SUBMISSIONS
+			// then replace the id below with the one it prints.
+			"binding": "RESOURCE_SUBMISSIONS",
+			"id": "83dd1736acdb4feab7d5baec7e2605c2",
+			"remote": true
+		}
+	],
 	"services": [
 		{
 			// Self-reference service binding, the service name must match the worker name

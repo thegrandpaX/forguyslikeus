@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "For Guys Like Us",
+  title: "For Guys Like Us | Men's Mental Health & Suicide Prevention",
   description: "Men's mental health — straight talk, no fluff.",
 };
 
@@ -12,36 +14,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <header className="site-header">
-          <nav className="nav">
-            <a className="nav-brand" href="/">
-              FOR GUYS LIKE US
-            </a>
-            <div className="nav-links">
-              <a href="/">Home</a>
-              <a href="/topics">The Reality</a>
-              <a href="/topics/barriers">The Barriers</a>
-              <a href="/topics/paths">The Paths</a>
-              <a href="/resources">The Resources</a>
-            </div>
-          </nav>
-        </header>
-
-        <main>{children}</main>
-
-        <footer className="site-footer">
-          <div className="inner">
-            <span>
-              &copy; 2026 For Guys Like Us. Educational content, not a
-              substitute for professional care.
-            </span>
-            <span>
-              In crisis? Call or text <a href="tel:988">988</a>, 24/7.
-            </span>
-          </div>
-        </footer>
+    <html className="dark" lang="en">
+      <head>
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link crossOrigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
+        <Header />
+        <main className="w-full pt-20 bg-background">{children}</main>
+        <Footer />
       </body>
     </html>
   );
