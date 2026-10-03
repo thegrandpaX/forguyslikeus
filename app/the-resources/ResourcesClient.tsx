@@ -55,7 +55,7 @@ export default function ResourcesPage() {
   }
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="editorial-route flex flex-col w-full">
       <div className="w-full bg-surface-container-lowest px-margin md:px-margin-tablet lg:px-margin-desktop py-space-sm">
         <div className="max-w-[1280px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-sm bg-surface-container-low p-space-sm md:px-space-md">
           <div className="flex items-center gap-space-sm">
@@ -100,7 +100,7 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      <section className="w-full bg-surface px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg sticky top-20 z-30 shadow-md">
+      <section className="w-full bg-surface px-margin md:px-margin-tablet lg:px-margin-desktop py-space-lg sticky top-[72px] z-30 shadow-md">
         <div className="max-w-[1280px] mx-auto flex flex-col gap-space-md">
           <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
             <div className="relative flex-1">

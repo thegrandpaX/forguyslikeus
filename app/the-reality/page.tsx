@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function RealityPage() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="editorial-route flex flex-col w-full">
       <div className="relative w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
         <div className="flex flex-col gap-space-sm mb-space-xl">
           <div className="flex items-center gap-space-sm">
@@ -36,15 +36,33 @@ export default function RealityPage() {
                     Construction and extraction industries face suicide rates <span className="text-on-surface font-semibold underline decoration-primary-container underline-offset-4">nearly 4x the national civilian average</span>. We lose five times more crew members to despair than to job-site falls, collapses, and equipment accidents combined.
                   </p>
                 </div>
-                <div className="flex-shrink-0 flex flex-col items-center justify-center p-space-md bg-surface-container-lowest rounded-md">
-                  <svg className="w-28 h-20" viewBox="0 0 120 70">
-                    <path d="M 10 65 A 50 50 0 0 1 110 65" fill="none" stroke="#262a34" strokeLinecap="round" strokeWidth="10" />
-                    <path d="M 10 65 A 50 50 0 0 1 95 25" fill="none" stroke="#f59e0b" strokeLinecap="round" strokeWidth="10" />
-                    <circle cx="60" cy="65" fill="#dfe2ef" r="4" />
-                    <line stroke="#ffb4ab" strokeLinecap="round" strokeWidth="3" x1="60" x2="90" y1="65" y2="28" />
-                  </svg>
-                  <span className="font-label-code text-label-code text-error tracking-wider mt-1 uppercase">3.9X MULTIPLIER</span>
-                </div>
+                <figure
+                  className="reality-comparison"
+                  role="img"
+                  aria-label="Relative suicide rates: national civilian average, 1 times baseline; construction and extraction industries, nearly 3.9 times baseline. Scale ends at 4 times."
+                >
+                  <figcaption className="reality-comparison__title">
+                    <strong>3.9×</strong>
+                    <span>Relative suicide rate</span>
+                  </figcaption>
+                  <div className="reality-comparison__scale" aria-hidden="true">
+                    <span>0×</span><span>2×</span><span>4×</span>
+                  </div>
+                  <div className="reality-comparison__row">
+                    <span>National civilian average</span>
+                    <div className="reality-comparison__track" aria-hidden="true">
+                      <span className="reality-comparison__bar reality-comparison__bar--baseline" style={{ width: "25%" }} />
+                    </div>
+                    <strong>1×</strong>
+                  </div>
+                  <div className="reality-comparison__row">
+                    <span>Construction &amp; extraction</span>
+                    <div className="reality-comparison__track" aria-hidden="true">
+                      <span className="reality-comparison__bar" style={{ width: "97.5%" }} />
+                    </div>
+                    <strong>3.9×</strong>
+                  </div>
+                </figure>
               </div>
             </div>
 
@@ -59,11 +77,11 @@ export default function RealityPage() {
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
                 <div className="bg-surface-container p-space-md rounded">
-                  <span className="font-label-code text-label-code text-primary uppercase block mb-1">// SYMPTOM ALPHA</span>
+                  <span className="font-label-code text-label-code text-primary uppercase block mb-1">Physical signs</span>
                   <p className="font-body-sm text-body-sm text-on-surface font-medium">Clenched jaw during sleep, broken rest patterns, waking at 3:15 AM heart racing without an obvious cause.</p>
                 </div>
                 <div className="bg-surface-container p-space-md rounded">
-                  <span className="font-label-code text-label-code text-primary uppercase block mb-1">// SYMPTOM BETA</span>
+                  <span className="font-label-code text-label-code text-primary uppercase block mb-1">Changes in mood</span>
                   <p className="font-body-sm text-body-sm text-on-surface font-medium">Spontaneous hair-trigger irritability over dropped tools, slow traffic, or normal family friction.</p>
                 </div>
               </div>
@@ -74,14 +92,17 @@ export default function RealityPage() {
 
             <div className="relative w-full h-80 rounded-lg overflow-hidden shadow-2xl bg-surface-container-high">
               <div
+                role="img"
+                aria-label="Two tradespeople welding a steel structure on site"
                 className="bg-cover bg-center w-full h-full"
-                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBoG-L7Jdfpxb-h-7PozSzEx_fsHxZwUn_hOe5LrRYMQE-eiu8XMGOO94HjnzlgCp9QuPwO7kZ1bq5ddCQQNlhOyhe-3qucTduDV6A8wy0Kp6PWQ5lInHfcT4-P5JSYu56odzbaP-erIkko12sJvkfa-qP2U90U_uwyRtBVayKu38z5i1qGxEsV-LA0ozacNPpyvY4g9_KQDMgOqzoCvTemCoHjslMxRdRtX-_BN3GC0rQHFZCn7dAGuw')" }}
+                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1614127938540-a1139bee1841?auto=format&fit=crop&w=1600&q=85')" }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent flex items-end p-space-lg">
+              <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/55 to-transparent flex items-end justify-between gap-space-md p-space-lg">
                 <div className="flex flex-col gap-space-xs max-w-xl">
                   <span className="font-label-code text-label-code text-primary-fixed uppercase tracking-wider">SITE DISPATCH // REALITY CHECK</span>
                   <p className="font-headline-sm text-headline-sm text-on-surface uppercase">&quot;We inspect every rigging cable, hydraulic line, and brake rotor before rolling. Yet we run ourselves until the rods shoot through the block.&quot;</p>
                 </div>
+                <a className="editorial-photo-credit" href="https://unsplash.com/@cloudveilczjx" target="_blank" rel="noreferrer">Photo: Eric Wang / Unsplash</a>
               </div>
             </div>
 
@@ -147,7 +168,7 @@ export default function RealityPage() {
                 If you&apos;re staring at the dark and wondering if anyone would notice if you didn&apos;t show up tomorrow, call or text. Free, 100% anonymous, peer-informed.
               </p>
               <a
-                className="w-full mt-space-sm py-3.5 px-space-md bg-secondary-container hover:bg-error-container text-on-secondary-container font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center gap-space-sm shadow-[4px_4px_0px_0px_#0a0e17] transition-all active:translate-x-0.5 active:translate-y-0.5"
+                className="editorial-crisis-button w-full mt-space-sm py-3.5 px-space-md bg-secondary-container hover:bg-error-container text-on-secondary-container font-headline-sm text-headline-sm uppercase tracking-wider flex items-center justify-center gap-space-sm shadow-[4px_4px_0px_0px_#0a0e17] transition-all active:translate-x-0.5 active:translate-y-0.5"
                 href="tel:988"
               >
                 <span className="material-symbols-outlined">call</span>
@@ -161,8 +182,8 @@ export default function RealityPage() {
             <GaugeChecklist />
 
             <div className="bg-surface-container-low p-space-lg rounded-lg shadow-md flex flex-col gap-space-md">
-              <span className="font-label-code text-label-code text-primary uppercase tracking-wider">// SYSTEMATIC PATHWAY</span>
-              <h4 className="font-headline-sm text-headline-sm text-on-surface uppercase">NEXT INTEL BRIEFS</h4>
+              <span className="font-label-code text-label-code text-primary uppercase tracking-wider">Explore what comes next</span>
+              <h4 className="font-headline-sm text-headline-sm text-on-surface uppercase">Keep exploring</h4>
               <div className="flex flex-col gap-space-sm">
                 <Link className="group flex items-center justify-between p-space-md bg-surface-container-lowest hover:bg-surface-container-high transition-colors rounded" href="/the-barriers">
                   <div className="flex flex-col">

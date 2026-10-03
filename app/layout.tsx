@@ -25,7 +25,7 @@ export default function RootLayout({
       </head>
       <body className="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
         <Header />
-        <main className="w-full pt-20 bg-background">{children}</main>
+        <main className="w-full pt-[72px] bg-background">{children}</main>
         <Footer />
       </body>
     </html>

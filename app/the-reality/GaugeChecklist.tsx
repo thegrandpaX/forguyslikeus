@@ -41,7 +41,7 @@ export default function GaugeChecklist() {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-space-xs">
           <div className="w-2 h-4 bg-primary-container" />
-          <h3 className="font-headline-sm text-headline-sm text-on-surface uppercase">THE GAUGE // FAULT LOG</h3>
+          <h3 className="font-headline-sm text-headline-sm text-on-surface uppercase">A quick check-in</h3>
         </div>
         <span className="font-label-code text-label-code text-primary uppercase">{count} / 5 DETECTED</span>
       </div>

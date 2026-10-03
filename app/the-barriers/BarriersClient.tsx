@@ -79,10 +79,10 @@ export default function BarriersPage() {
   const visible = BARRIERS.filter((b) => active === "all" || b.category === active);
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="editorial-route flex flex-col w-full">
       <div className="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl">
         <div className="relative bg-surface-container-low p-space-lg md:p-space-xl rounded-lg shadow-xl overflow-hidden mb-space-xl">
-          <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#ffc174_1px,transparent_1px)] [background-size:16px_16px]" />
+          <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#34799c_1px,transparent_1px)] [background-size:16px_16px]" />
           <div className="absolute top-0 left-0 w-2 h-full bg-primary-container" />
           <div className="relative z-10 flex flex-col md:flex-row md:items-end justify-between gap-space-md">
             <div className="max-w-3xl">
@@ -144,10 +144,10 @@ export default function BarriersPage() {
                   <span className="material-symbols-outlined text-[24px]">{b.icon}</span>
                   <span className="font-label-badge text-label-badge uppercase">{b.kicker}</span>
                 </div>
-                <p className="font-label-code text-label-code text-error mb-1 tracking-wider uppercase">// THE BULLSHIT STORY</p>
+                <p className="font-label-code text-label-code text-error mb-1 tracking-wider uppercase">The story we tell ourselves</p>
                 <h2 className="font-headline-md text-headline-md text-on-surface uppercase mb-space-md">{b.quote}</h2>
                 <div className="p-space-md bg-surface-container-lowest rounded mb-space-md">
-                  <p className="font-label-code text-label-code text-primary-container uppercase mb-1 tracking-wider">// HARD TRUTH &amp; SPECS</p>
+                  <p className="font-label-code text-label-code text-primary-container uppercase mb-1 tracking-wider">What may help</p>
                   <p className="font-body-md text-body-md text-on-surface">{b.body}</p>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export default function BarriersPage() {
           <div className="relative bg-surface-container-highest rounded-lg p-space-lg flex flex-col justify-between shadow-lg overflow-hidden">
             <div className="absolute -right-8 -bottom-8 w-32 h-32 bg-primary-container/10 rounded-full blur-2xl" />
             <div>
-              <span className="font-label-code text-label-code text-primary uppercase tracking-widest">// RIG RIGOR CHECK</span>
+              <span className="font-label-code text-label-code text-primary uppercase tracking-widest">A quick check-in</span>
               <h2 className="font-headline-md text-headline-md text-on-surface uppercase mt-1 mb-space-sm">ARE YOU REDLINING RIGHT NOW?</h2>
               <p className="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
                 Toggle the symptoms currently flashing on your internal gauge cluster:
@@ -184,16 +184,28 @@ export default function BarriersPage() {
           </div>
         </div>
 
+        <figure className="editorial-image mb-space-xl">
+          <div
+            className="editorial-image__visual editorial-image__visual--crew"
+            role="img"
+            aria-label="Road construction crew working together at a street project"
+          />
+          <figcaption>
+            <span>Looking out for each other is part of the job.</span>
+            <a href="https://unsplash.com/@kommumikation" target="_blank" rel="noreferrer">Photo: Mika Baumeister / Unsplash</a>
+          </figcaption>
+        </figure>
+
         <div className="relative w-full bg-surface-container-lowest rounded-lg p-space-lg md:p-space-xl mb-space-xl shadow-xl overflow-hidden">
           <div className="flex flex-col lg:flex-row items-center gap-space-lg">
             <div className="w-full lg:w-1/3 flex flex-col items-center justify-center p-space-md bg-surface-container-low rounded-lg">
               <svg className="w-48 h-48 text-primary-container" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" fill="none" r="42" stroke="#262a34" strokeDasharray="198 66" strokeDashoffset="-33" strokeLinecap="round" strokeWidth="8" />
+                <circle cx="50" cy="50" fill="none" r="42" stroke="#dce8ec" strokeDasharray="198 66" strokeDashoffset="-33" strokeLinecap="round" strokeWidth="8" />
                 <circle cx="50" cy="50" fill="none" r="42" stroke="currentColor" strokeDasharray="140 124" strokeDashoffset="-33" strokeLinecap="round" strokeWidth="8" />
-                <line stroke="#ffb4ab" strokeLinecap="round" strokeWidth="3" x1="50" x2="68" y1="50" y2="30" />
-                <circle cx="50" cy="50" fill="#dfe2ef" r="5" />
-                <text fill="#dfe2ef" fontFamily="Barlow Condensed" fontSize="12" fontWeight="700" textAnchor="middle" x="50" y="70">REDLINE</text>
-                <text fill="#a08e7a" fontFamily="JetBrains Mono" fontSize="7" textAnchor="middle" x="50" y="82">PSI OVER 92%</text>
+                <line stroke="#a83c2e" strokeLinecap="round" strokeWidth="3" x1="50" x2="68" y1="50" y2="30" />
+                <circle cx="50" cy="50" fill="#202a25" r="5" />
+                <text fill="#202a25" fontFamily="Newsreader" fontSize="12" fontWeight="600" textAnchor="middle" x="50" y="70">REDLINE</text>
+                <text fill="#70818a" fontFamily="DM Sans" fontSize="7" textAnchor="middle" x="50" y="82">PSI OVER 92%</text>
               </svg>
               <div className="mt-space-sm text-center">
                 <span className="font-label-badge text-label-badge uppercase text-primary">FIELD TOLERANCE BREACH</span>
@@ -224,7 +236,7 @@ export default function BarriersPage() {
             <div>
               <div className="flex items-center gap-space-xs text-primary mb-space-sm">
                 <span className="material-symbols-outlined">route</span>
-                <span className="font-label-code text-label-code tracking-wider uppercase">// PROCEED TO PROTOCOL</span>
+                <span className="font-label-code text-label-code tracking-wider uppercase">One step forward</span>
               </div>
               <h2 className="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight mb-space-sm">READY TO TEARDOWN THE BULLSHIT?</h2>
               <p className="font-body-md text-body-md text-on-surface-variant mb-space-lg">

@@ -115,4 +115,52 @@ export const RESOURCES: Resource[] = [
     actions: [],
     isEapGuide: true,
   },
+  {
+    name: "CONSTRUCTION WORKING MINDS",
+    tagline: "PREVENTION TOOLS FOR CONSTRUCTION",
+    category: "trades",
+    categoryLabel: "CONSTRUCTION PREVENTION",
+    status: "ONLINE TOOLKIT",
+    statusColor: "primary",
+    keywords: "construction working minds prevention toolbox talks workplace crisis response grief support checklists",
+    description:
+      "Construction-focused prevention materials, crisis-response guidance, grief support, and toolbox talks for building healthier job sites. Includes practical workplace checklists and a construction suicide-prevention blueprint.",
+    guarantee: "GUIDES, TOOLBOX TALKS & CHECKLISTS",
+    actions: [
+      { label: "BROWSE PREVENTION TOOLS", href: "https://constructionworkingminds.com/prevention-resources", icon: "menu_book", style: "bg-primary-container text-on-primary-container hover:bg-primary", external: true },
+      { label: "OPEN THE TOOLBOX", href: "https://constructionworkingminds.com/toolbox", icon: "build", style: "bg-surface-container-high hover:bg-surface-bright text-on-surface", external: true },
+    ],
+  },
+  {
+    name: "SAMHSA NATIONAL HELPLINE",
+    tagline: "TREATMENT REFERRALS, DAY OR NIGHT",
+    category: "addiction",
+    categoryLabel: "MENTAL HEALTH & SUBSTANCE USE",
+    status: "FREE / CONFIDENTIAL / 24-7",
+    statusColor: "tertiary",
+    keywords: "samhsa substance use mental health treatment recovery referral english spanish helpline 800 662 4357",
+    description:
+      "Free, confidential information and referrals to local mental-health and substance-use treatment, support groups, and community organizations. Available in English and Spanish, every day of the year.",
+    guarantee: "NO COST; CONFIDENTIAL; 24/7",
+    actions: [
+      { label: "CALL 1-800-662-4357", href: "tel:18006624357", icon: "call", style: "bg-primary-container text-on-primary-container hover:bg-primary" },
+      { label: "FIND LOCAL TREATMENT", href: "https://findtreatment.gov/", icon: "search", style: "bg-surface-container-high hover:bg-surface-bright text-on-surface", external: true },
+    ],
+  },
+  {
+    name: "CRISIS TEXT LINE",
+    tagline: "TEXT HOME OR HOLA TO 741741",
+    category: "counseling",
+    categoryLabel: "TEXT-BASED CRISIS SUPPORT",
+    status: "FREE / CONFIDENTIAL / 24-7",
+    statusColor: "tertiary",
+    keywords: "crisis text line text 741741 home hola counselor free confidential 24/7",
+    description:
+      "Text HOME or HOLA to connect with a live volunteer Crisis Counselor for free, confidential support, 24/7. Standard message and data rates may apply. For immediate danger, call 911.",
+    guarantee: "FREE SERVICE; MESSAGE RATES MAY APPLY",
+    actions: [
+      { label: "TEXT HOME TO 741741", href: "sms:741741?&body=HOME", icon: "sms", style: "bg-primary-container text-on-primary-container hover:bg-primary" },
+      { label: "CHAT ONLINE", href: "https://connect.crisistextline.org/chat", icon: "chat", style: "bg-surface-container-high hover:bg-surface-bright text-on-surface", external: true },
+    ],
+  },
 ];

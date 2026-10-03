@@ -52,14 +52,14 @@ export default function PathsPage() {
   }
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="editorial-route flex flex-col w-full">
       <section className="w-full max-w-[1280px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-8 pb-12">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8">
           <div className="flex flex-col gap-3 max-w-3xl">
             <div className="flex items-center gap-3">
               <span className="px-2.5 py-1 bg-surface-container-highest text-primary font-label-code text-label-code uppercase tracking-wider">ACTION // 03</span>
               <span className="w-12 h-0.5 bg-primary-container" />
-              <span className="font-label-code text-label-code text-on-surface-variant uppercase">BLUEPRINT ROUTE: /TOPICS/PATHS</span>
+              <span className="font-label-code text-label-code text-on-surface-variant uppercase">A PRACTICAL GUIDE, AT YOUR PACE</span>
             </div>
             <h1 className="font-headline-xl text-headline-xl text-on-surface uppercase tracking-wide">
               THE PATHS: <span className="text-primary">CHANGING THE PATTERN.</span>
@@ -137,6 +137,18 @@ export default function PathsPage() {
                 </a>
               </div>
             </div>
+
+            <figure className="editorial-image">
+              <div
+                className="editorial-image__visual editorial-image__visual--framing"
+                role="img"
+                aria-label="Construction worker framing a timber wall on site"
+              />
+              <figcaption>
+                <span>One steady next step is still progress.</span>
+                <a href="https://unsplash.com/@josholalde" target="_blank" rel="noreferrer">Photo: Josh Olalde / Unsplash</a>
+              </figcaption>
+            </figure>
 
             {/* Phase 02 */}
             <div className="bg-surface-container-low p-6 md:p-8 flex flex-col gap-6 shadow-md transition-colors hover:bg-surface-container">
