@@ -6,18 +6,26 @@ export default function Home() {
       <div className="home-page__inner">
         <section className="home-hero">
           <div className="home-hero__copy">
-            <p className="home-eyebrow">For the ones who keep showing up</p>
             <h1>
-              Men&apos;s mental health.
               <span>For guys like us.</span>
             </h1>
             <p className="home-hero__intro">
-              Long shifts, money pressure, old injuries, and the things you never learned to say out loud can pile up.
-              You don&apos;t have to figure it all out before you reach out.
+              <strong>Most men don&apos;t talk about mental health.</strong>
+            </p>
+            <p className="home-hero__intro">
+              We say we&apos;re tired. Or stressed. Or having a bad week. But when the bad week turns into months —
+              snapping over nothing, sleeping like garbage, needing drinks or pills just to shut your brain off at
+              night — it&apos;s worth taking an honest look at what&apos;s actually going on.
+            </p>
+            <p className="home-hero__intro">
+              This site is for men who work for a living and carry the heavy stuff quietly. No lectures. No clinical
+              jargon. No sitting in a circle sharing feelings. Just a straight breakdown of what chronic stress,
+              burnout, anxiety, and trauma actually feel like day-to-day — and some practical first steps that
+              don&apos;t require you to become a different person.
             </p>
             <div className="home-hero__actions">
               <Link className="home-button home-button--dark" href="/the-reality">
-                Start with the reality <span aria-hidden="true">&rarr;</span>
+                What&apos;s actually going on <span aria-hidden="true">&rarr;</span>
               </Link>
               <Link className="home-text-link" href="/the-resources">
                 Find support and resources
@@ -32,44 +40,50 @@ export default function Home() {
             />
             <figcaption>
               <span>You don&apos;t have to hit bottom to deserve help.</span>
-              <span>Start wherever you are.</span>
             </figcaption>
           </figure>
         </section>
 
         <section className="home-pathways" aria-labelledby="home-pathways-title">
           <div className="home-section-heading">
-            <p className="home-eyebrow">No wrong door in</p>
-            <h2 id="home-pathways-title">Start with what feels familiar.</h2>
+            <h2 id="home-pathways-title">Start wherever you are.</h2>
           </div>
           <div className="home-pathways__list">
             <Link className="home-pathway" href="/the-reality">
               <span className="home-pathway__number">01</span>
               <span className="home-pathway__copy">
-                <strong>Make sense of what you&apos;re carrying</strong>
-                <span>Stress, burnout, and the signs it may be more than a rough week.</span>
+                <strong>What&apos;s actually going on</strong>
+                <span>
+                  What stress, burnout, anxiety, and trauma feel like in real life — in your body, in your head, in
+                  your day. Not the textbook version.
+                </span>
               </span>
               <span className="home-pathway__arrow" aria-hidden="true">&rarr;</span>
             </Link>
             <Link className="home-pathway" href="/the-barriers">
               <span className="home-pathway__number">02</span>
               <span className="home-pathway__copy">
-                <strong>Understand why asking can feel hard</strong>
-                <span>The pressure to handle everything alone, and what gets in the way.</span>
+                <strong>The stories we tell ourselves</strong>
+                <span>
+                  &ldquo;I&apos;m just tired.&rdquo; &ldquo;I just need a couple beers.&rdquo; &ldquo;Other guys have
+                  it worse.&rdquo; The rationalizations that keep guys stuck — and what they cost.
+                </span>
               </span>
               <span className="home-pathway__arrow" aria-hidden="true">&rarr;</span>
             </Link>
             <Link className="home-pathway" href="/the-paths">
               <span className="home-pathway__number">03</span>
               <span className="home-pathway__copy">
-                <strong>Find one next step</strong>
-                <span>Practical ways to start a conversation or find support that fits.</span>
+                <strong>What actually helps</strong>
+                <span>
+                  Practical, low-pressure first steps. Rule out the physical stuff. Cut the self-medication cycle.
+                  Talk to one person who won&apos;t judge you.
+                </span>
               </span>
               <span className="home-pathway__arrow" aria-hidden="true">&rarr;</span>
             </Link>
           </div>
         </section>
-
       </div>
     </div>
   );

@@ -172,14 +172,6 @@
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0;
-  text-transform: lowercase;
-}
-
-.editorial-route h1::first-letter,
-.editorial-route h2::first-letter,
-.editorial-route h3::first-letter,
-.editorial-route h4::first-letter {
-  text-transform: uppercase;
 }
 
 .editorial-route .font-label-code,
@@ -225,6 +217,10 @@
 
 .editorial-image__visual--crew {
   background-image: url("https://images.unsplash.com/photo-1593436878396-e943a3cac98f?auto=format&fit=crop&w=1600&q=85");
+}
+
+.editorial-image__visual--welding {
+  background-image: url("https://images.unsplash.com/photo-1614127938540-a1139bee1841?auto=format&fit=crop&w=1600&q=85");
 }
 
 .editorial-image__visual--framing {
@@ -727,9 +723,16 @@
 }
 
 .site-footer__description {
+  max-width: 640px;
   margin-top: 5px;
   color: #d9e4e8;
   font-size: 13px;
+}
+
+.site-footer__description a {
+  color: #fffdf7;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .site-footer__button {

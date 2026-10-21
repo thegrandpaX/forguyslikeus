@@ -5,10 +5,11 @@ import { usePathname } from "next/navigation";
 
 const LINKS: { href: string; label: string }[] = [
   { href: "/", label: "Home" },
-  { href: "/the-reality", label: "The Reality" },
-  { href: "/the-barriers", label: "The Barriers" },
-  { href: "/the-paths", label: "The Paths" },
-  { href: "/the-resources", label: "The Resources" },
+  { href: "/the-reality", label: "What's going on" },
+  { href: "/the-barriers", label: "The stories we tell" },
+  { href: "/the-paths", label: "What helps" },
+  { href: "/the-resources", label: "Resources" },
+  { href: "/about", label: "About" },
 ];
 
 export default function Header() {
