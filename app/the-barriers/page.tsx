@@ -34,6 +34,10 @@ const STORIES: { line: string; truth: string }[] = [
     line: "“I don’t need anyone telling me about my life.”",
     truth: "Nobody’s asking to run your life. But keeping everything locked inside just forces your brain to re-run the same bad scenarios on loop.",
   },
+  {
+    line: "“I’m not lonely. I’m around guys all day.”",
+    truth: "Being around a crew all day isn’t the same as having one guy you’d call at 2 AM. When Gallup asked U.S. men aged 15 to 34 about the day before, a quarter said they’d felt lonely a lot of it. For young men across OECD countries, the typical number was 15%. Shooting the bull at break is good, but it’s not the same as telling someone what’s actually going on. Pick one buddy and tell him one true thing this week.",
+  },
 ];
 
 export default function BarriersPage() {
@@ -46,7 +50,9 @@ export default function BarriersPage() {
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant">
             Guys are built to push through and solve problems. That strength turns into a blind spot when
-            something deeper is off. And we&apos;re all good at explaining it away. Here are the standard lines we use, and what
+            something deeper is off. That&apos;s not just me talking. A 2025 review of 47 studies, mostly from the U.S.,
+            found that the tough-it-out, handle-it-yourself code is tied to men putting off help or skipping it
+            altogether. And we&apos;re all good at explaining it away. Here are the standard lines we use, and what
             they actually cost.
           </p>
         </div>
@@ -86,6 +92,32 @@ export default function BarriersPage() {
             What actually helps →
           </Link>
         </div>
+
+        <section className="mt-space-xl max-w-3xl flex flex-col gap-space-xs">
+          <h2 className="font-headline-sm text-headline-sm text-on-surface">Sources</h2>
+          <p className="font-body-sm text-body-sm text-on-surface-variant">
+            <a
+              className="underline"
+              href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12117241/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Mokhwelepa LW, Sumbane GO. &ldquo;Men&apos;s Mental Health Matters: The Impact of Traditional Masculinity
+              Norms on Men&apos;s Willingness to Seek Mental Health Support; a Systematic Review of Literature,&rdquo;
+              American Journal of Men&apos;s Health 19(3), May 2025
+            </a>
+          </p>
+          <p className="font-body-sm text-body-sm text-on-surface-variant">
+            <a
+              className="underline"
+              href="https://news.gallup.com/poll/690788/younger-men-among-loneliest-west.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              &ldquo;Younger Men in the U.S. Among the Loneliest in West,&rdquo; Gallup, May 20, 2025 (data 2023-2024)
+            </a>
+          </p>
+        </section>
       </div>
     </div>
   );

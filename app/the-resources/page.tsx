@@ -15,7 +15,7 @@ export default function ResourcesPage() {
             Resources
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant">
-            Real numbers and real organizations. Every line below is free and confidential.
+            Real numbers and real organizations. The crisis lines up top are free, confidential, and open 24/7. For everything else, hours and costs vary, so check the listing or call ahead.
           </p>
         </div>
 
@@ -79,6 +79,24 @@ export default function ResourcesPage() {
             </p>
           </div>
           <RecommendForm />
+        </section>
+
+        <section className="mt-space-xl max-w-3xl flex flex-col gap-space-xs">
+          <h2 className="font-headline-sm text-headline-sm text-on-surface">Sources</h2>
+          {[
+            { label: "AgriStress Helpline, AgriSafe Network", href: "https://www.agrisafe.org/agristress-helpline/" },
+            { label: "Resources for Farmers, Farm Aid", href: "https://www.farmaid.org/our-work/resources-for-farmers/" },
+            { label: "NAMI Spokane", href: "https://www.namispokane.org/" },
+            { label: "Veterans Crisis Line", href: "https://www.veteranscrisisline.net/" },
+            { label: "Crisis Text Line", href: "https://www.crisistextline.org/" },
+            { label: "Peer Spokane (a program of Peer Washington), Services", href: "https://www.peerspokane.org/services" },
+          ].map((s) => (
+            <p key={s.href} className="font-body-sm text-body-sm text-on-surface-variant">
+              <a className="underline" href={s.href} target="_blank" rel="noopener noreferrer">
+                {s.label}
+              </a>
+            </p>
+          ))}
         </section>
       </div>
     </div>

@@ -144,6 +144,47 @@ export default function RealityPage() {
               </ol>
             </section>
 
+            <section className="flex flex-col gap-space-md">
+              <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
+                It&apos;s not just construction
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                You&apos;ve probably heard that construction loses a lot of guys. It does. In CDC&apos;s look at 2021
+                death records for working men aged 16 to 64, the suicide rate in construction and extraction work was
+                65.6 per 100,000. That&apos;s about double the 32.0 for working men overall. But construction isn&apos;t
+                the whole picture, and a lot of other jobs that look like ours are on the list too.
+              </p>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                Mechanics, installers, and repair guys came in at 46.0, close to one and a half times the rate for all
+                working men. I&apos;ve been a heavy equipment mechanic, a roofer, and a welder, so that one hits close
+                to home. Farming, fishing, and forestry jobs were at 49.9. Guys who keep buildings and grounds running
+                were at 37.6, and factory and production work was at 36.0. Trucking and warehouse work was at 34.9.
+                That&apos;s only a little above average, so no need to panic over that one, but it&apos;s not below it
+                either.
+              </p>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                Management, office, computer, and teaching jobs? All below the average for working men.
+              </p>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                Mining shows up high too, at 72.0 per 100,000 men. That number comes from CDC&apos;s breakdown by
+                industry, not by job title, so it&apos;s measured a different way and doesn&apos;t line up against the
+                numbers above. Still, if you work underground or in the oil patch, it&apos;s worth knowing.
+              </p>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                The numbers themselves don&apos;t say why. CDC&apos;s report points to a couple of job-related things
+                that may play a part: easier access to lethal means through work, and job stress, including worry over
+                whether the job will last. What the numbers do say is that the guys who fix things, build things, grow
+                things, and move things carry more than people give them credit for. These are 2021 numbers, and as of
+                this writing there&apos;s no newer CDC breakdown by job.
+              </p>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                So here&apos;s the step, and it&apos;s the same one you&apos;ll find all over this site: look at the
+                guy next to you. You don&apos;t need a speech. &apos;You&apos;ve been quiet lately. You good?&apos; Then
+                shut up and let him answer. If the answer&apos;s &apos;fine&apos; but his face says otherwise, ask
+                again tomorrow.
+              </p>
+            </section>
+
             <section className="flex flex-col gap-space-md bg-surface-container-lowest p-space-lg md:p-space-xl rounded-lg">
               <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
                 When it&apos;s more than a rough patch
@@ -166,6 +207,109 @@ export default function RealityPage() {
               <p className="font-body-md text-body-md text-on-surface font-medium">
                 You&apos;d never work on a live circuit without locking it out and tagging it first. Taking an honest
                 look at this is the same kind of discipline. It&apos;s not weakness. It&apos;s doing the job right.
+              </p>
+            </section>
+
+            <section className="flex flex-col gap-space-md">
+              <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface">
+                If you&apos;re there right now
+              </h2>
+              <p className="font-body-md text-body-md text-on-surface-variant">
+                If you&apos;re thinking about ending it, or you can&apos;t trust yourself tonight. All free, confidential, and open 24/7.
+              </p>
+              <article className="flex flex-col justify-between gap-space-md bg-surface-container-low p-space-lg rounded-lg border-l-4 border-secondary-container">
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  <strong className="text-on-surface">988 Suicide &amp; Crisis Lifeline.</strong> Call or text 988 and
+                  you&apos;ll reach a trained counselor. You don&apos;t need the right words. You can also chat online.
+                </p>
+                <div className="flex flex-wrap gap-space-sm">
+                  <a
+                    className="px-space-md py-2.5 font-label-badge text-label-badge uppercase tracking-wider transition-colors bg-secondary-container hover:bg-error-container text-on-secondary-container"
+                    href="tel:988"
+                  >
+                    Call 988
+                  </a>
+                  <a
+                    className="px-space-md py-2.5 font-label-badge text-label-badge uppercase tracking-wider transition-colors bg-surface-container-high hover:bg-surface-bright text-on-surface"
+                    href="sms:988"
+                  >
+                    Text 988
+                  </a>
+                  <a
+                    className="px-space-md py-2.5 font-label-badge text-label-badge uppercase tracking-wider transition-colors bg-surface-container-high hover:bg-surface-bright text-on-surface"
+                    href="https://988lifeline.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    988lifeline.org ↗
+                  </a>
+                </div>
+              </article>
+              <article className="flex flex-col justify-between gap-space-md bg-surface-container-low p-space-lg rounded-lg border-l-4 border-secondary-container">
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  <strong className="text-on-surface">Crisis Text Line.</strong> If talking out loud isn&apos;t going to
+                  happen, text HOME to 741741 (HOLA for Spanish) and a trained volunteer texts back. Message and data
+                  rates may apply.
+                </p>
+                <div className="flex flex-wrap gap-space-sm">
+                  <a
+                    className="px-space-md py-2.5 font-label-badge text-label-badge uppercase tracking-wider transition-colors bg-secondary-container hover:bg-error-container text-on-secondary-container"
+                    href="sms:741741?body=HOME"
+                  >
+                    Text HOME to 741741
+                  </a>
+                  <a
+                    className="px-space-md py-2.5 font-label-badge text-label-badge uppercase tracking-wider transition-colors bg-surface-container-high hover:bg-surface-bright text-on-surface"
+                    href="https://connect.crisistextline.org/chat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Chat online ↗
+                  </a>
+                </div>
+              </article>
+              <article className="flex flex-col justify-between gap-space-md bg-surface-container-low p-space-lg rounded-lg border-l-4 border-secondary-container">
+                <p className="font-body-md text-body-md text-on-surface-variant">
+                  <strong className="text-on-surface">Veterans Crisis Line.</strong> Dial 988 and press 1, or text
+                  838255. You don&apos;t have to be enrolled in VA benefits or health care to use it.
+                </p>
+                <div className="flex flex-wrap gap-space-sm">
+                  <a
+                    className="px-space-md py-2.5 font-label-badge text-label-badge uppercase tracking-wider transition-colors bg-secondary-container hover:bg-error-container text-on-secondary-container"
+                    href="tel:988"
+                  >
+                    Dial 988, press 1
+                  </a>
+                  <a
+                    className="px-space-md py-2.5 font-label-badge text-label-badge uppercase tracking-wider transition-colors bg-surface-container-high hover:bg-surface-bright text-on-surface"
+                    href="sms:838255"
+                  >
+                    Text 838255
+                  </a>
+                  <a
+                    className="px-space-md py-2.5 font-label-badge text-label-badge uppercase tracking-wider transition-colors bg-surface-container-high hover:bg-surface-bright text-on-surface"
+                    href="https://www.veteranscrisisline.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    veteranscrisisline.net ↗
+                  </a>
+                </div>
+              </article>
+            </section>
+
+            <section className="flex flex-col gap-space-xs">
+              <h2 className="font-headline-sm text-headline-sm text-on-surface">Sources</h2>
+              <p className="font-body-sm text-body-sm text-on-surface-variant">
+                <a
+                  className="underline"
+                  href="https://www.cdc.gov/mmwr/volumes/72/wr/mm7250a2.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  &ldquo;Suicide Rates by Industry and Occupation — National Vital Statistics System, United States,
+                  2021,&rdquo; MMWR 72(50), CDC, December 2023
+                </a>
               </p>
             </section>
           </div>
