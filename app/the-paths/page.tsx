@@ -18,7 +18,7 @@ export default function PathsPage() {
             What actually helps
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant">
-            Fixing this doesn&apos;t mean sitting in a circle sharing feelings or changing who you are. It means
+            Getting a handle on this doesn&apos;t mean sitting in a circle sharing feelings or changing who you are. It means
             practical steps, simplest first.
           </p>
         </div>
@@ -77,7 +77,7 @@ export default function PathsPage() {
             <li className="bg-surface-container-low p-space-lg md:p-space-xl rounded-lg">
               <h2 className={STEP_TITLE}>6. Know your protections.</h2>
               <p className={STEP_BODY}>
-                This is what keeps guys from step 5. Most employers offer a few free confidential EAP sessions. Most
+                Worrying about your job is what keeps guys from step 5. Most employers offer a few free confidential EAP sessions. Most
                 trade unions have member assistance programs separate from management. Federal medical privacy law
                 bars your providers from sharing diagnoses with your foreman or dispatcher without your written
                 consent. One honest caveat: if you hold a CDL, the DOT medical exam does ask about mental health
@@ -114,7 +114,7 @@ export default function PathsPage() {
                 aria-label="Construction worker framing a timber wall on site"
               />
               <figcaption>
-                <span>One steady next step is still progress.</span>
+                <span>One foot in front of the other.</span>
                 <a href="https://unsplash.com/@josholalde" target="_blank" rel="noreferrer">Photo: Josh Olalde / Unsplash</a>
               </figcaption>
             </figure>

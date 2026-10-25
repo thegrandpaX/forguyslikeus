@@ -10,7 +10,7 @@ export default function Home() {
               <span>For guys like us.</span>
             </h1>
             <p className="home-hero__intro">
-              <strong>Most men don&apos;t talk about mental health.</strong>
+              <strong>Most of us don&apos;t talk about mental health.</strong>
             </p>
             <p className="home-hero__intro">
               We say we&apos;re tired. Or stressed. Or having a bad week. But when the bad week turns into months —
@@ -18,8 +18,8 @@ export default function Home() {
               night — it&apos;s worth taking an honest look at what&apos;s actually going on.
             </p>
             <p className="home-hero__intro">
-              This site is for men who work for a living and carry the heavy stuff quietly. No lectures. No clinical
-              jargon. No sitting in a circle sharing feelings. Just a straight breakdown of what chronic stress,
+              This site is for men who work for a living and carry the heavy stuff quietly. Nobody&apos;s going to lecture you, bury you in
+              clinical jargon, or sit you in a circle to share your feelings. Just a straight breakdown of what chronic stress,
               burnout, anxiety, and trauma actually feel like day-to-day — and some practical first steps that
               don&apos;t require you to become a different person.
             </p>
@@ -66,7 +66,7 @@ export default function Home() {
                 <strong>The stories we tell ourselves</strong>
                 <span>
                   &ldquo;I&apos;m just tired.&rdquo; &ldquo;I just need a couple beers.&rdquo; &ldquo;Other guys have
-                  it worse.&rdquo; The rationalizations that keep guys stuck — and what they cost.
+                  it worse.&rdquo; The excuses that keep guys stuck — and what they cost.
                 </span>
               </span>
               <span className="home-pathway__arrow" aria-hidden="true">&rarr;</span>

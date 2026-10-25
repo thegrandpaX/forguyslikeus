@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 const STORIES: { line: string; truth: string }[] = [
   {
     line: "“I’m just tired. Once this project wraps up, I’ll be fine.”",
-    truth: "You’ve been saying that for six months. When one stressor ends, another takes its place, and your body never resets.",
+    truth: "You’ve been saying that for six months. When one thing wraps up, something else piles on, and your body never gets a chance to reset.",
   },
   {
     line: "“I’m just getting older. Everybody’s back aches.”",
@@ -46,7 +46,7 @@ export default function BarriersPage() {
           </h1>
           <p className="font-body-lg text-body-lg text-on-surface-variant">
             Guys are built to push through and solve problems. That strength turns into a blind spot when
-            something deeper is off. The brain is good at rationalizing — here are the standard lines, and what
+            something deeper is off. And we&apos;re all good at explaining it away. Here are the standard lines we use, and what
             they actually cost.
           </p>
         </div>

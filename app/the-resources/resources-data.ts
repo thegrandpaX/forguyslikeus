@@ -59,7 +59,7 @@ export const RESOURCE_GROUPS: ResourceGroup[] = [
     resources: [
       {
         name: "SAMHSA National Helpline",
-        summary: "Free, confidential, 24/7 referrals to treatment, support groups, and community services, including if you don't have insurance. English and Spanish.",
+        summary: "Free, confidential, and open 24/7. They'll point you to treatment, support groups, and community services, even if you don't have insurance. English and Spanish.",
         actions: [
           { label: "Call 1-800-662-4357", href: "tel:18006624357" },
           { label: "FindTreatment.gov", href: "https://findtreatment.gov", external: true },

@@ -16,7 +16,7 @@ export default function AboutPage() {
           <p className="font-body-lg text-body-lg text-on-surface-variant">
             Most of my working life I was a mechanic — heavy equipment, welding, turning wrenches. Later I worked as
             a treatment technician and shift supervisor at a residential youth recovery center here in Spokane, and
-            as an independent family advocate helping people navigate family courts, child support, and state
+            as an independent family advocate helping people find their way through family courts, child support, and state
             systems during some of the worst stretches of their lives.
           </p>
           <p className="font-body-lg text-body-lg text-on-surface-variant">

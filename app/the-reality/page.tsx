@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 const SIGNS: { title: string; body: string }[] = [
   {
     title: "The short fuse.",
-    body: "Small things set you off — a dropped tool, a slow driver, a simple question at home — and heat rises in your chest before you can think. You aren't looking for a fight. Your baseline tolerance is just shot.",
+    body: "Small things set you off — a dropped tool, a slow driver, a simple question at home — and heat rises in your chest before you can think. You aren't looking for a fight. Your patience is just shot.",
   },
   {
     title: "The running engine.",
-    body: "Even on the couch, your brain won't idle. Bills. Mistakes from five years ago. Everything that could go wrong tomorrow. On loop.",
+    body: "Even on the couch, your brain won't idle. It just keeps cycling through bills, mistakes from five years ago, and everything that could go wrong tomorrow, over and over.",
   },
   {
     title: "Dead weight.",
@@ -36,7 +36,7 @@ const SIGNS: { title: string; body: string }[] = [
 const OTHERS: { who: string; sees: string }[] = [
   { who: "Your partner", sees: "sees you pulling away, going quiet, snapping over tiny things. Walking on eggshells." },
   { who: "Your kids", sees: "notice Dad doesn't play like he used to, gets frustrated fast, zones out in another room." },
-  { who: "Your crew", sees: "notices you're dragging, making uncharacteristic mistakes, skipping the break-room banter." },
+  { who: "Your crew", sees: "notices you're dragging, making mistakes you don't usually make, skipping the break-room banter." },
   { who: "Your friends", sees: "notice you stopped showing up. Texts unanswered, invites declined, off the radar." },
 ];
 
@@ -47,7 +47,7 @@ const DAY: { time: string; body: string }[] = [
   },
   {
     time: "11:00 AM",
-    body: "Halfway through the shift, a minor setback — a part's out of stock, someone makes a small mistake — and your temper flares instantly. Or you feel so overwhelmed you want to walk off the job.",
+    body: "Halfway through the shift, something small goes sideways — a part's out of stock, somebody makes a small mistake — and you go from fine to pissed off in about a second. Or you feel so overwhelmed you want to walk off the job.",
   },
   {
     time: "5:30 PM",
@@ -158,7 +158,7 @@ export default function RealityPage() {
                 ))}
               </ul>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                One important note: these experiences don&apos;t mean you&apos;re broken, and they don&apos;t
+                Worth saying: none of this means you&apos;re broken, and it doesn&apos;t
                 automatically mean clinical depression. Chronic pain, bad sleep, thyroid or hormone issues can feel
                 word-for-word identical. That&apos;s why the first step is usually a doctor — not a diagnosis from a
                 website.
