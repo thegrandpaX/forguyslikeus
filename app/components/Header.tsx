@@ -10,6 +10,7 @@ const LINKS: { href: string; label: string }[] = [
   { href: "/the-paths", label: "What helps" },
   { href: "/the-resources", label: "Resources" },
   { href: "/about", label: "About" },
+  { href: "/donate", label: "Donate" },
 ];
 
 export default function Header() {

@@ -30,6 +30,7 @@ export default function Footer() {
             <Link href="/the-paths">What helps</Link>
             <Link href="/the-resources">Resources</Link>
             <Link href="/about">About</Link>
+            <Link href="/donate">Donate</Link>
           </nav>
         </div>
       </div>
