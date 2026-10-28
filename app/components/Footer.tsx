@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CONTACT_EMAIL, SocialLinks } from "./contact";
 
 export default function Footer() {
   return (
@@ -18,6 +19,13 @@ export default function Footer() {
             </p>
           </div>
           <a className="site-footer__button" href="tel:988">Call or text 988</a>
+        </div>
+        <div className="site-footer__connect">
+          <p>
+            Questions, a resource to share, or just want to talk shop?{" "}
+            <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+          </p>
+          <SocialLinks className="site-footer__socials" />
         </div>
         <div className="site-footer__bottom">
           <p>

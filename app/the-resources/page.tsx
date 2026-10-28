@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import RecommendForm from "./RecommendForm";
+import { CONTACT_EMAIL } from "../components/contact";
 import { RESOURCE_GROUPS } from "./resources-data";
 
 export const metadata: Metadata = {
@@ -76,6 +77,10 @@ export default function ResourcesPage() {
             <p className="font-body-md text-body-md text-on-surface-variant max-w-xl">
               A union program, a peer group, a counselor who gets guys like us. Send it over. I check every
               recommendation before adding it. You don&apos;t have to give your name. Just tell me about the program.
+            </p>
+            <p className="font-body-sm text-body-sm text-on-surface-variant max-w-xl">
+              Rather email? Write to{" "}
+              <a className="underline text-on-surface" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
             </p>
           </div>
           <RecommendForm />

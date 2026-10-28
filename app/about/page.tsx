@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CONTACT_EMAIL, SocialLinks } from "../components/contact";
 
 export const metadata: Metadata = {
   title: "About | For Guys Like Us",
@@ -35,6 +36,12 @@ export default function AboutPage() {
             have to pay what we did.
           </p>
           <p className="font-headline-sm text-headline-sm text-primary">— Scott</p>
+          <p className="font-body-md text-body-md text-on-surface-variant mt-space-sm">
+            Want to reach me? Email{" "}
+            <a className="underline text-on-surface" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, or find
+            us on Facebook, Instagram, and Threads.
+          </p>
+          <SocialLinks className="flex gap-space-xs text-on-surface-variant [&_a]:inline-flex [&_a]:w-11 [&_a]:h-11 [&_a]:items-center [&_a]:justify-center [&_a:hover]:text-on-surface" />
         </article>
       </div>
     </div>
